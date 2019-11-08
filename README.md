@@ -27,3 +27,5 @@ python -m test.specs.calculator_test
 ```
 # Reports
 Once framework run successfully it will generate the report under folder name html-report
+
+![Dashborad Result](https://github.com/vickyru/pytho-selenium-unittest-html-report/blob/master/resources/FW-Resources/Report.PNG)
