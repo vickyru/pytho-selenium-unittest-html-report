@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import unittest
 import HtmlTestRunner
 from test.page.calculator_page import CalculatorPage
+from resources import framework_constants as constants
 
 class Calculator(unittest.TestCase):
     
@@ -12,7 +13,7 @@ class Calculator(unittest.TestCase):
         try:
             # self.driver = webdriver.Firefox(executable_path=r'E:\web-drivers\geckodriver.exe')
             self.driver = webdriver.Chrome(ChromeDriverManager().install())
-            self.driver.get('https://juliemr.github.io/protractor-demo/')
+            self.driver.get(constants.url)
             self.driver.implicitly_wait(10)
         except Exception as exception:
             print("Exception Occured" + exception.with_traceback)
